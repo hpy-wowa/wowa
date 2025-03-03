@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>와와의 첫 웹사이트</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클릭 카운터</title>
 </head>
 <body>
-	<h1>안녕하세요 와왑니다!</h1>
-	<h4>이번에 시작하는 새로운 프로젝트는</h4>
-	<p>
-	<h4>내 웹사이트 만들기 입니다!</h4>
-	<p>
-	<h1>와와가 좋아하는 사이트 링크는 아래 있어요</h1>
-	<a href="https://www.youtube.com/@HappyWowa">와와 유튜브 채널</a>
-	<p>
-	<h1>와와의 프로필 사진입니다.</h1>
-	<img src="해피와와프로필.png" alt="와와얼굴">
+    <h1>클릭 카운터</h1>
+    <h2 id="counter">0</h2>
+    <button onclick="increment()">클릭!</button>
+
+    <!-- Firebase SDK -->
+     <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBeWxeTcJd1PD2IMlg1PvuWvMpe-YQCMf0",
+    authDomain: "wowa-btn-click.firebaseapp.com",
+    projectId: "wowa-btn-click",
+    storageBucket: "wowa-btn-click.firebasestorage.app",
+    messagingSenderId: "777270183489",
+    appId: "1:777270183489:web:3b5d2113b3d21dd67ba8c0",
+    measurementId: "G-51W59BP884"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+        // 카운터 업데이트 함수
+        function increment() {
+            const counterRef = ref(db, "counter");
+
+            get(counterRef).then((snapshot) => {
+                let currentCount = snapshot.exists() ? snapshot.val() : 0;
+                let newCount = currentCount + 1;
+
+                set(counterRef, newCount);
+
+                document.getElementById("counter").innerText = newCount;
+            });
+        }
+    </script>
 </body>
 </html>
