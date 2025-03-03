@@ -11,31 +11,29 @@
     <button onclick="increment()">클릭!</button>
 
     <!-- Firebase SDK -->
-     <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+        import { getDatabase, ref, get, set } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-database.js";
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyBeWxeTcJd1PD2IMlg1PvuWvMpe-YQCMf0",
-    authDomain: "wowa-btn-click.firebaseapp.com",
-    projectId: "wowa-btn-click",
-    storageBucket: "wowa-btn-click.firebasestorage.app",
-    messagingSenderId: "777270183489",
-    appId: "1:777270183489:web:3b5d2113b3d21dd67ba8c0",
-    measurementId: "G-51W59BP884"
-  };
+        // Firebase 설정
+        const firebaseConfig = {
+            apiKey: "AIzaSyBeWxeTcJd1PD2IMlg1PvuWvMpe-YQCMf0",
+            authDomain: "wowa-btn-click.firebaseapp.com",
+            projectId: "wowa-btn-click",
+            storageBucket: "wowa-btn-click.appspot.com",  
+            messagingSenderId: "777270183489",
+            appId: "1:777270183489:web:3b5d2113b3d21dd67ba8c0",
+            measurementId: "G-51W59BP884"
+        };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+        // Firebase 초기화
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const db = getDatabase(app);
 
         // 카운터 업데이트 함수
-        function increment() {
+        window.increment = function () {
             const counterRef = ref(db, "counter");
 
             get(counterRef).then((snapshot) => {
