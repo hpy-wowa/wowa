@@ -1,42 +1,85 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>와와의 첫 웹사이트</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>와와 디자인</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      background: #f2f2f2;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 16px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 24px;
+      color: #777;
+    }
+    .link-button {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 12px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      transition: background 0.2s;
+    }
+    .link-button:hover {
+      background: #555;
+    }
 
-	<style>
-	    .button {
-	        padding: 10px 20px;
-	        background-color: #daac6b;
-	        color: white;
-	        text-align: center;
-	        text-decoration: none;
-	        display: inline-block;
-	        border-radius: 5px;
-	    }
-	
-	    .button:hover {
-	        background-color: #45a049;
-	    }
-	</style>
-	
-	
+    @media (max-width: 480px) {
+      .container {
+        padding: 24px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-	<h1>안녕하세요 와왑니다!</h1>
-	<h4>이번에 시작하는 새로운 프로젝트는</h4>
-	<p>
-	<h4>내 웹사이트 만들기 입니다!</h4>
-	<p>
-	<h1>와와가 좋아하는 사이트 링크는 아래 있어요</h1>
-	<a href="https://www.youtube.com/@HappyWowa">와와 유튜브 채널</a>
-	<p>
-	<h1>와와가 AI로 만든 버튼누르기 웹사이트는 아래 버튼을 눌러주세요</h1>
-	<p>
-	<a href="https://hpy-wowa.github.io/test/" class="button">와와버튼</a>
-	<p>
-	<h1>와와의 프로필 사진입니다.</h1>
-	<img src="해피와와프로필.png" alt="와와얼굴">
+  <div class="container">
+    <img src="https://via.placeholder.com/100" alt="Profile" class="avatar" />
+    <h1>김이도</h1>
+    <p>디자이너 · 브랜드 운영자</p>
+
+    <a href="https://www.instagram.com/kimwowa_designer" class="link-button" target="_blank">📷김와와 인스타그램</a>
+    <a href="https://www.youtube.com/@kimwowa" class="link-button" target="_blank">▶️김와와 유튜브</a>
+    <a href="https://kimwowa.my.canva.site" class="link-button" target="_blank">🌐김와와 포스터 구매</a>
+    <a href="http://pf.kakao.com/_uuxjrn/chat" class="link-button" target="_blank">💬 카카오 오픈채팅</a>
+  </div>
 </body>
 </html>
