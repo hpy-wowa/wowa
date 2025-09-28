@@ -1,89 +1,76 @@
 <!DOCTYPE html>
-<html lang="ko">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>와와 디자인</title>
+    <meta charset="utf-8" />
+    <title>김이도사무실소개</title>
 
-  <!-- 파비콘 설정 -->
-  <link rel="icon" href="/icon.png" type="image/png">
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
-    }
-    body {
-      background: #f2f2f2;
-      color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-    .container {
-      background: white;
-      border-radius: 16px;
-      padding: 32px;
-      max-width: 400px;
-      width: 100%;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .avatar {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 0 auto 16px;
-    }
-    h1 {
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
-    p {
-      font-size: 14px;
-      margin-bottom: 24px;
-      color: #777;
-    }
-    .link-button {
-      display: block;
-      width: 100%;
-      padding: 14px;
-      margin-bottom: 12px;
-      background: #333;
-      color: white;
-      text-decoration: none;
-      border-radius: 12px;
-      transition: background 0.2s;
-    }
-    .link-button:hover {
-      background: #555;
-    }
-
-    @media (max-width: 480px) {
-      .container {
-        padding: 24px;
-      }
-      h1 {
-        font-size: 20px;
-      }
-    }
-  </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <img src="와와프로필.png" alt="Profile" class="avatar" />
-    <h1>김이도</h1>
-    <p>디자이너</p>
 
-    <a href="https://www.instagram.com/kimwowa_designer" class="link-button" target="_blank">📷김와와 인스타그램</a>
-    <a href="https://www.youtube.com/@kimwowa" class="link-button" target="_blank">▶️김와와 유튜브</a>
-    <a href="https://kimwowa.my.canva.site" class="link-button" target="_blank">🌐김와와 포스터 구매</a>
-    <a href="http://pf.kakao.com/_uuxjrn/chat" class="link-button" target="_blank">💬 카카오 오픈채팅</a>
-  </div>
+    <div>
+        <div class="page">
+            <div id="page0">
+                <div class="eedoFace">
+                    <img src="img/face000.png" style="max-width:100%; " />
+                </div>
+                <div id="eedoT">
+                    <!-- 머릿말-->
+                    <h1 style="color: #ff3000;">
+                        KIM EE-DO
+                    </h1>
+                </div>
+                <div id="eedoTd">
+                    <h2 style="margin-left: 20px; color: #ff3000;">
+                        안녕하세요<br />김이도의 사무실을 소개합니다
+                    </h2>
+                    <h3 style="margin-left: 20px;">
+                        탈출하고 싶은 사무실입니다. <br /> 이도 나름대로 적응을 위해<br />사무실의 구역을 나눠 생활하고 있습니다.
+                    </h3>
+                </div>
+            </div>
+
+            <!--첫페이지 시작-->
+            <div class="frontpage" id="page1">
+                <div style="width: 210px;">
+                    <img class="imgs" src="img/eedoDesk.jpg" />
+                </div>
+                <h2>
+                    이도의 책상
+                </h2>
+                <h3>
+                    이도가 작업하는 책상이다. <br />
+                    책상 위에 콱(QUACK) 피규어와<br />
+                    이도가 만든 케이스를 <br />
+                    씌워놓은 에어팟이<br />
+                    눈에 띈다
+                </h3>
+            </div>
+            <div id="page1-1">
+                <div class="wrapperR">
+                    <h5 style="margin: 20% 0 0 auto; text-align: right;">
+                        공룡처럼 생겼지만<br />
+                        오리 피규어다.
+                    </h5>
+                    <div style="width: 150px; display:block;">
+                        <img class="imgs" style="" src="img/eedoQuack.png" />
+                    </div>
+                </div>
+                <div class="wrapperR">
+                    <h5 style="margin:5% 0 0 auto; text-align:right;">
+                        직접 제작한<br />
+                        에어팟 케이스다.<br />
+                        고양이가 귀엽다.
+                    </h5>
+                    <div style="width: 150px; display:block;">
+                        <img class="imgs" style="" src="img/eedoAirpot.png" />
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
 </body>
 </html>
