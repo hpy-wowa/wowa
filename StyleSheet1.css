@@ -63,18 +63,21 @@ h2, h3, h4, h5 {
 .eedoface {
     width:280px;
     position: fixed;
-    top: 33%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
-/*
+
 @media (max-width: 400px){
 
-    .cont {
-        width: 360px;
-        margin: 0 auto;
+    .eedoface {
+        width: 280px;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
     }
 
 }
-    */
