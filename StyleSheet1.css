@@ -91,7 +91,18 @@ h2, h3, h4, h5 {
         color: #ff3000;
         text-align: center;
         margin-top: 100px;
-        margin-bottom: 600px;
+        margin-bottom: 550px;
+    }
+
+    .title1 {
+        font-size: 1.8em;
+        color: #ff3000;
+    }
+
+    .title2 {
+        line-height: 1.2;
+        font-size: 1.2em;
+        color: #ff3000;
     }
 
 }
