@@ -21,7 +21,7 @@ h2, h3, h4, h5 {
     color: #ff3000;
     text-align: center;
     margin-top: 60px;
-    margin-bottom: 380px;
+    margin-bottom: 550px;
 }
 .title1 {
     font-size: 24px;
@@ -61,9 +61,9 @@ h2, h3, h4, h5 {
 }
 
 .eedoface {
-    width:280px;
+    width:380px;
     position: fixed;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -78,6 +78,14 @@ h2, h3, h4, h5 {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
+    }
+    .title0 {
+        font-family: 'InterBlack', sans-serif;
+        font-size: 30px;
+        color: #ff3000;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 350px;
     }
 
 }
