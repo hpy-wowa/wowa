@@ -20,7 +20,7 @@ h2, h3, h4, h5 {
     font-size: 30px;
     color: #ff3000;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: 550px;
 }
 .title1 {
@@ -74,7 +74,7 @@ h2, h3, h4, h5 {
     .eedoface {
         width: 280px;
         position: fixed;
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
