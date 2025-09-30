@@ -3,74 +3,98 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>김이도사무실소개</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link rel="stylesheet" href="style.css">
+    <title>김이도 사무실 소개</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
 </head>
 <body>
-
-    <div>
-        <div class="page">
-            <div id="page0">
-                <div class="eedoFace">
-                    <img src="img/face000.png" style="max-width:100%; " />
-                </div>
-                <div id="eedoT">
-                    <!-- 머릿말-->
-                    <h1 style="color: #ff3000;">
-                        KIM EE-DO
-                    </h1>
-                </div>
-                <div id="eedoTd">
-                    <h2 style="margin-left: 20px; color: #ff3000;">
-                        안녕하세요<br />김이도의 사무실을 소개합니다
-                    </h2>
-                    <h3 style="margin-left: 20px;">
-                        탈출하고 싶은 사무실입니다. <br /> 이도 나름대로 적응을 위해<br />사무실의 구역을 나눠 생활하고 있습니다.
-                    </h3>
-                </div>
-            </div>
-
-            <!--첫페이지 시작-->
-            <div class="frontpage" id="page1">
-                <div style="width: 210px;">
-                    <img class="imgs" src="img/eedoDesk.jpg" />
-                </div>
-                <h2>
-                    이도의 책상
-                </h2>
-                <h3>
-                    이도가 작업하는 책상이다. <br />
-                    책상 위에 콱(QUACK) 피규어와<br />
-                    이도가 만든 케이스를 <br />
-                    씌워놓은 에어팟이<br />
-                    눈에 띈다
-                </h3>
-            </div>
-            <div id="page1-1">
-                <div class="wrapperR">
-                    <h5 style="margin: 20% 0 0 auto; text-align: right;">
-                        공룡처럼 생겼지만<br />
-                        오리 피규어다.
-                    </h5>
-                    <div style="width: 150px; display:block;">
-                        <img class="imgs" style="" src="img/eedoQuack.png" />
-                    </div>
-                </div>
-                <div class="wrapperR">
-                    <h5 style="margin:5% 0 0 auto; text-align:right;">
-                        직접 제작한<br />
-                        에어팟 케이스다.<br />
-                        고양이가 귀엽다.
-                    </h5>
-                    <div style="width: 150px; display:block;">
-                        <img class="imgs" style="" src="img/eedoAirpot.png" />
-                    </div>
-                </div>
-            </div>
-            
-
+    <!--이도얼굴-->
+    <div class="cont">
+        <div class="eedoface" style="width: 25%;">
+            <img class="imgs" src="img/face000.png" />
         </div>
+    </div>
+    <!--인트로-->
+    <div class="cont" style="margin-bottom:400px;">
+        <div class="incont">
+            <h1 class="title0">
+                KIM EE-DO
+            </h1>
+            <h2 class="title1">
+                안녕하세요<br />김이도 사무실 보여드릴게요
+            </h2>
+            <h3 class="title2">
+                탈출하고 싶은 사무실이지만<br />애착이 있는 공간도 있습니다.<br />하나씩 보여드리겠습니다.
+            </h3>
+        </div>
+    </div>
+    <!--1페이지 시작-->
+    <div class="cont" style="z-index: 2;">
+        <div class="incont" style="width: 60%; ">
+            <img class="imgs" src="img/eedoDesk.jpg" />
+            <h2 class="subt0">김이도 책상</h2>
+            <h3 class="subt1">
+                작업을 하는 책상이다.<br />책상 위에 콱(QUACK) 피규어와<br />직접 만든 케이스를 씌워놓은 <br />에어팟이 올라가 있다.
+            </h3>
+        </div>
+    </div>
+    <div class="cont" style="display: flex; justify-content: flex-end; margin-top:70px;">
+        <div class="left-incont">
+            <h5 class="subt2" style="text-align:right;">공룡처럼 생겼지만<br />사실 오리다.</h5>
+        </div>
+        <div class="left-incont" style="width: 40%;">
+            <img class="imgs" src="img/eedoQuack.png" />
+        </div>
+    </div>
+    <div class="cont" style="display: flex; justify-content: flex-end; margin-bottom:200px; z-index: 2;">
+        <div class="left-incont">
+            <h5 class="subt2" style="text-align:right;">직접 제작한 에어팟 케이스다.<br />고양이가 매우 귀엽다</h5>
+        </div>
+        <div class="left-incont" style="width: 45%;">
+            <img class="imgs" src="img/eedoAirpot.png" />
+        </div>
+    </div>
+    <!--2페이지 시작-->
+
+    <div class="cont">
+        <h2 class="subt0">관물대</h2>
+        <div class="incont" style="width: 60%;">
+            <img class="imgs" src="img/eedoChester.png" />
+            <h2 class="subt0">옷과 잡동산이들</h2>
+            <h3 class="subt1">
+                사실상 전재산.<br />인형과 운동용품이 어지럽게 놓여있다.<br />(*사실 이게 정리해 놓은 것)
+            </h3>
+        </div>
+    </div>
+    <div class="cont" style="display: flex; justify-content: flex-end; margin-top:70px;">
+        <div class="left-incont">
+            <h5 class="subt2" style="text-align:right;">선물받은 선글라스<br />아마도 보물 1호 2호<br /><br /></h5>
+        </div>
+        <div class="left-incont" style="width: 50%;">
+            <img class="imgs" src="img/eedoSun0.png" />
+        </div>
+    </div>
+    <div class="cont" style="display: flex; justify-content: flex-end; margin-bottom:350px; z-index: 2;">
+        <div class="left-incont">
+            <h5 class="subt2" style="text-align:right;">당근마켓에서 구매한<br />복싱 용품들<br />(*신발은 선물 받았다)<br /><br /></h5>
+        </div>
+        <div class="left-incont" style="width: 60%;">
+            <img class="imgs" src="img/eedoBoxing.png" />
+        </div>
+    </div>
+    <!--3페이지 시작-->
+    <div class="cont" style="margin-bottom:600px; z-index: 2;">
+        <div class="incont" style="width: 100%;">
+            <img class="imgs" src="img/eedoThinkDesk.png" />
+            <h2 class="subt0" style="text-align:center; margin-top: 100px;">생각책상</h2>
+            <h3 class="subt1" style="text-align:center;">
+                자기전 생각하고 글을 쓰는 공간<br />이 책상에서는 유튜브도 인스타도<br />마음껏 할 수 있다.
+            </h3>
+        </div>
+    </div>
+    <div class="cont" style="margin-bottom:200px;">
+        <h1 class="title0" style="text-align: center; margin-bottom: 0;">END</h1>
     </div>
 </body>
 </html>
