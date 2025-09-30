@@ -1,15 +1,16 @@
 // JavaScript source code
-// ¸ğµç ¸®¼Ò½º°¡ ·ÎµåµÇ¸é ½ÇÇà
+// ëª¨ë“  ë¦¬ì†ŒìŠ¤ê°€ ë¡œë“œë˜ë©´ ì‹¤í–‰
 window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
     const content = document.querySelector(".cont");
 
     if (preloader && content) {
-        // ·Îµù ¿Ï·á ÈÄ 3ÃÊ µ¿¾È À¯Áö
+        // ë¡œë”© ì™„ë£Œ í›„ 3ì´ˆ ë™ì•ˆ ìœ ì§€
         setTimeout(function () {
-            preloader.style.display = "none";   // ·Îµù È­¸é Á¦°Å
-            document.body.style.overflow = "auto"; // ½ºÅ©·Ñ Çã¿ë
-        }, 3000); // 3ÃÊ
+            preloader.style.display = "none";   // ë¡œë”© í™”ë©´ ì œê±°
+            document.body.style.overflow = "auto"; // ìŠ¤í¬ë¡¤ í—ˆìš©
+        }, 2000); // 2ì´ˆ
     }
 
 });
+
