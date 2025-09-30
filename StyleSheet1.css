@@ -72,7 +72,7 @@ h2, h3, h4, h5 {
 @media (max-width: 400px){
 
     .eedoface {
-        width: 40%;
+        width: 100%;
         position: fixed;
         top: 45%;
         left: 50%;
@@ -87,20 +87,20 @@ h2, h3, h4, h5 {
 
     .title0 {
         font-family: 'InterBlack', sans-serif;
-        font-size: 2.1em;
+        font-size: 2em;
         color: #ff3000;
         text-align: center;
         margin-top: 100px;
-        margin-bottom: 550px;
+        margin-bottom: 350px;
     }
 
     .title1 {
-        font-size: 1.8em;
+        font-size: 1.2em;
         color: #ff3000;
     }
 
     .title2 {
-        line-height: 1.2;
+        line-height: 0.9;
         font-size: 1.2em;
         color: #ff3000;
     }
