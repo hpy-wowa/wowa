@@ -1,4 +1,4 @@
-﻿body {
+body {
     background-color: black;
 }
 
@@ -61,6 +61,7 @@ h2, h3, h4, h5 {
 }
 
 .eedoface {
+    width:25%;
     position: fixed;
     top: 45%;
     left: 50%;
@@ -69,28 +70,10 @@ h2, h3, h4, h5 {
 }
 
 @media (max-width: 400px){
-    .title0 {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 200px;
-    }
+
     .cont {
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
     }
-    /*
-    .title0 {
-        font-size: 40px;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 200px;
-    }
-    .title1 {
-        font-size: 25px;
-    }
-    .title2 {
-        font-size: 17px;
-    }
 
-    */
 }
