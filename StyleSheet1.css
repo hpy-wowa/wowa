@@ -28,8 +28,8 @@ h2, h3, h4, h5 {
     color: #ff3000;
 }
 .title2 {
-    line-height: 1.6;
     font-size: 19px;
+    line-height: 1.6;
     color: #ff3000;
 }
 .subt0 {
@@ -42,7 +42,7 @@ h2, h3, h4, h5 {
     line-height: 1.8;
 }
 .subt2 {
-    font-size: 1em;
+    font-size: 12px;
     color: #ff3000;
 }
 .cont {
@@ -68,12 +68,13 @@ h2, h3, h4, h5 {
     transform: translate(-50%, -50%);
     z-index: 1;
 }
-
+/*
 @media (max-width: 400px){
 
     .cont {
-        width: 400px;
+        width: 360px;
         margin: 0 auto;
     }
 
 }
+    */
