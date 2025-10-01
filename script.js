@@ -1,9 +1,10 @@
 // JavaScript source code
 window.addEventListener("scroll", function () {
     const img = document.getElementById("eedohead");
-    const scrollY = window.scrollY; // ÇöÀç ½ºÅ©·Ñ À§Ä¡
+    const scrollY = window.scrollY; // Ã‡Ã¶Ã€Ã§ Â½ÂºÃ…Â©Â·Ã‘ Ã€Â§Ã„Â¡
 
-    let a = Math.floor(scrollY / 100) % 12; 
+    let a = Math.floor(scrollY / 60) % 12; 
 
     img.src = "img/face00" + a + ".png";
 });
+
